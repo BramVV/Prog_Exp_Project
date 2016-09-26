@@ -21,6 +21,7 @@ public class Run {
 		solver.solve();
 		int[][] solvedPuzzle = solver.getBoard();
 		DisplaySudoku(solvedPuzzle);
+		s.close();
 	}
 
 	private static void DisplaySudoku(int[][] Puzzle) {
