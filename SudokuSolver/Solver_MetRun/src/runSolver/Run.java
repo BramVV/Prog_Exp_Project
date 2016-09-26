@@ -13,27 +13,35 @@ public class Run {
 		System.out.println("Hoeveel Onbekende?");
 		int onb = s.nextInt();
 		int[][] unsolvedPuzzle = SudokuGenerator.generate(onb);
+		DisplaySudoku(unsolvedPuzzle);
+		System.out.println("Druk enter om op te lossen.");
+		s.nextLine();
+		s.nextLine();
 		SudokuSolver solver = new SudokuSolver(unsolvedPuzzle);
 		solver.solve();
 		int[][] solvedPuzzle = solver.getBoard();
-		//sudoku late zien
+		DisplaySudoku(solvedPuzzle);
+	}
+
+	private static void DisplaySudoku(int[][] Puzzle) {
 		int count2 = 0;
-		for (int[] is : solvedPuzzle) {
-			if(count2 % 3 == 0){
+		for (int[] is : Puzzle) {
+			if (count2 % 3 == 0) {
 				System.out.println("---------------------------");
 			}
 			int count = 1;
 			System.out.print(" | ");
 			for (int i : is) {
 				System.out.print(i + " ");
-				if(count % 3 == 0){
+				if (count % 3 == 0) {
 					System.out.print("| ");
 				}
 				count++;
-		}
+			}
 			count2++;
 			System.out.println();
 		}
 		System.out.println("---------------------------");
 	}
+
 }
