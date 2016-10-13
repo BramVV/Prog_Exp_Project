@@ -6,7 +6,7 @@ import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import javax.swing.*;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -66,9 +66,8 @@ public class Window extends JFrame implements ActionListener {
       Btns.add(goBtn);
       
       contentPane.add(Btns, BorderLayout.SOUTH);
-      
+
    }
-   
    public Cells getCells(boolean ignore) throws Exception {
       boolean ok = true;
       Cells cells = new Cells(dimensions);
