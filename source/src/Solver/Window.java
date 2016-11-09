@@ -6,6 +6,7 @@ import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.LocalDateTime;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -127,7 +128,6 @@ public class Window extends JFrame implements ActionListener {
          } catch (Exception e) {
             System.out.println(e.getMessage());
          }
-         
       } else if ("undo".equals(event.getActionCommand())) {
          System.out.println("UNDOING");
          setCells(undoCells, false);
@@ -141,5 +141,8 @@ public class Window extends JFrame implements ActionListener {
             setCells(new Cells(dimensions), false);
          }
       }
+      
+      System.gc();
+    	
    }
 }

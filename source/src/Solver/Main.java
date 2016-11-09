@@ -19,6 +19,4 @@ public class Main {
       // open window
          new Window(9);
    }
-   
-   
 }
