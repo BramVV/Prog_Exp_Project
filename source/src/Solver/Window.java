@@ -6,8 +6,12 @@ import java.awt.Container;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+<<<<<<< HEAD
 import java.time.LocalDateTime;
 
+=======
+import javax.swing.*;
+>>>>>>> 9862d2ae633315e8782124ef1334984a9194274e
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -67,9 +71,8 @@ public class Window extends JFrame implements ActionListener {
       Btns.add(goBtn);
       
       contentPane.add(Btns, BorderLayout.SOUTH);
-      
+
    }
-   
    public Cells getCells(boolean ignore) throws Exception {
       boolean ok = true;
       Cells cells = new Cells(dimensions);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bin/Solver/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/bin/Solver/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SolverMetUi.iml" filepath="$PROJECT_DIR$/SolverMetUi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bin/Solver/src.iml" filepath="$PROJECT_DIR$/bin/Solver/src.iml" />
+    </modules>
+  </component>
+</project>
