@@ -1,0 +1,5 @@
+defn van performantie int begin.
+Die spike nakijken met andere tools.
+Meer problemen vinden met andere tools.
+Slides nakijken voor dinge in de file?
+Reflexie.
