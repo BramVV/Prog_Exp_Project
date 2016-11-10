@@ -1,7 +1,5 @@
 package Solver;
 
-import javafx.scene.control.Cell;
-
 import javax.swing.*;
 
 import static javax.swing.JOptionPane.*;
